@@ -1,0 +1,165 @@
+/*----------------- Tous les medias -------------------*/
+body {
+    background: #E3F2FD;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar {
+    background: #0D47A1!important;
+}
+
+.experiences-container, .formations-container, .competences-container,
+.interets-container, .contact-container {
+    width: 65%;
+    margin: 70px auto 60vh 20%;
+    text-align: center;
+}
+
+.title {
+    color: rgb(128, 41, 125);
+    border-bottom: 1px solid;
+    text-transform: uppercase;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+.annee {
+    color: #198754;
+}
+
+i {
+    margin-left: 5px;
+}
+
+/*----------------- Section expériences -------------------*/
+.experiences-content {
+    margin-bottom: 40px;
+}
+
+.experiences-content li {
+    font-style: italic;
+}
+
+/*----------------- Section compétences -------------------*/
+.progress {
+    height: 50px;
+    margin-top: 30px;
+}
+.progress-bar {
+    font-size: 1.2rem;
+    text-shadow: 2px 2px black;
+}
+
+/*----------------- Section centre d'intérêts -------------------*/
+.carousel {
+    margin-top: 70px;
+}
+
+.carousel img {
+    height: 375px;
+}
+
+/*----------------- Section contact -------------------*/
+.contact-container {
+    text-align: left;
+}
+
+form label {
+    margin: 15px 0 5px ;
+    font-size: 1.2rem;
+}
+
+.contact-container button {
+    margin-top: 20px;
+}
+
+.fa-caret-square-up {
+    float: right;
+    margin-top: 50px;
+    font-size: 1.6rem;
+}
+
+/*-------------------------------- Smartphone ------------------------------------*/
+@media (max-width: 575px) {
+  
+}
+
+
+/*-------------------------------- Tablette --------------------------------------*/
+@media (max-width: 991px)  {
+    .desktop, #profil img {
+        display: none;
+    }
+    .mobile {
+        text-align: center;
+        padding-top: 130px;
+        margin-bottom: 50vh;
+    }
+    .mobile img {
+        height: 420px;
+        margin-bottom: 20px;
+    }
+   .mobile-content h4 {
+       margin-bottom: 15px;
+   }
+   .mobile-content a {
+       text-transform: uppercase;
+       margin: 5px 10px;
+   }
+   .experiences-container, .formations-container, .competences-container,
+   .interets-container, .contact-container {
+    margin-bottom: 30vh;
+}
+}
+
+
+/*-------------------------------- Desktop ---------------------------------------*/
+@media (min-width: 992px) {
+
+/*----------------- Menu nav -------------------*/
+    #navbar {
+        width: 17em;
+        height: 100vh;
+    }
+    #navbar-container {
+        display: flex;
+        flex-direction: column;
+    }
+    #profil img {
+        border: solid white 6px;
+    }
+    .navbar-nav {
+        display: inline-block;
+        text-align: center;
+    }
+    .navbar-brand {
+        padding: 16px 0 25px 16px;
+    }
+    #navbar a {
+        text-transform: uppercase;
+    }
+
+/*----------------- Section expériences -------------------*/
+    section {
+        margin-left: 20%;
+    }
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        text-align: center;
+        margin: 40vh auto 50vh 5%;
+    }
+    .desktop h2 {
+        width: 65%;
+        margin: 10px auto;
+        font-size: 2.5rem;
+    }
+    .desktop-content p {
+        color: #198754;
+    }
+    .desktop-content a {
+        margin: 5px;
+    }
+}
